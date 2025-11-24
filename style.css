@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap'); /* Adiciona uma fonte serifada elegante */
+
+* {
+    box-sizing: border-box;
+}
+
+/* 1. VARIÁVEIS DE COR DARK ACADEMIA */
+:root {
+    --primary-color: #A68E5D; /* Dourado/Bege Clássico (destaque e links) */
+    --secondary-color: #E6E1D7; /* Cor do Texto (Papel Envelhecido) */
+    --tertiary-color: #727272; /* Cinza Sépia (para informações secundárias) */
+    --bg-color: #242426; /* Cor de Fundo Principal (Preto Tinta/Escrivaninha) */
+    --card-bg: #303033; /* Fundo dos Cards (Madeira Escura) */
+    --accent-color: #5D4037; /* Marrom Profundo (Borda/Detalhe) */
+}
+
+body {
+    margin: 0;    
+    margin: 0;
+    color: var(--secondary-color);
+    font-family: "Quicksand", sans-serif;
+    /* IMAGEM DE FUNDO */
+    background-image: url('background-image.png'); /* Caminho para sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+header {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    z-index: 10;
+    /* Borda sutil de madeira escura */
+    border-bottom: 2px solid var(--accent-color);
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    /* Usa uma fonte serifada para um toque clássico */
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--primary-color);
+}
+
+div input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem; /* Menos arredondado para um visual mais formal */
+    border: 1px solid var(--tertiary-color);
+    background: var(--card-bg); /* Fundo do input na cor do card */
+    font-family: inherit;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: 30rem;
+    color: var(--secondary-color);
+    margin-right: .5rem;
+}
+
+div input::placeholder {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--tertiary-color);
+}
+
+div input:focus {
+    outline: none;
+    border-color: var(--primary-color); /* Foco em dourado */
+    box-shadow: 0 0 0 0.1rem var(--primary-color);
+}
+
+#botao-busca {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
+    background-color: var(--primary-color); /* Botão dourado */
+    color: var(--bg-color); /* Texto escuro no botão */
+    border: 1px solid var(--primary-color);
+}
+
+#botao-busca:hover {
+    background-color: transparent; /* Fundo transparente ao passar o mouse */
+    color: var(--primary-color); /* Texto em dourado */
+    border: 1px solid var(--primary-color);
+}
+
+#botao-busca:active {
+    transform: scale(0.98);
+}
+
+main {
+    overflow-y: scroll;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    /* Altura calculada para evitar que o rodapé flutue */
+    min-height: calc(100vh - 10rem); 
+    padding-bottom: 4rem; 
+}
+
+/* ESTILIZAÇÃO DO CARD DE LIVRO */
+article {
+    background: var(--card-bg); /* Fundo sutilmente mais claro que o body */
+    border-radius: 0.5rem; 
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    /* Sombra interna sutil para dar profundidade */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-left: 5px solid var(--accent-color); /* Borda lateral de destaque */
+}
+
+article:hover {
+    transform: translateY(-3px) scale(1.005); /* Efeito de elevação sutil */
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+    font-family: 'Cormorant Garamond', serif; /* Título do livro em fonte clássica */
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); /* Título em dourado */
+}
+
+article p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+article p strong {
+    color: var(--tertiary-color); /* Cor dos rótulos (Autor, Publicação) */
+    font-weight: 500;
+}
+
+/* Estilização para as tags de gênero */
+.genero-tags {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--tertiary-color);
+}
+
+article a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--card-bg); /* Cor do texto do link */
+    background-color: var(--primary-color); /* Fundo do link em dourado */
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+article a:hover {
+    background-color: var(--primary-color);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+/* RODAPÉ E MEDIA QUERIES (Mantido do original, mas adaptado às novas cores) */
+
+.footer {
+    position: fixed; /* Fixa o rodapé na parte inferior */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--tertiary-color);
+    background-color: var(--bg-color);
+    padding: 15px 20px;
+    border-top: 1px solid var(--accent-color);
+    font-size: 0.8rem;
+    z-index: 11;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    div input {
+        width: 90vw;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+
+    article:hover {
+        transform: none;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 480px) {
+    div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #botao-busca {
+        margin-top: 0.5rem;
+        width: 90vw;
+    }
+
+    .footer {
+        display: none;
+    }
+}
