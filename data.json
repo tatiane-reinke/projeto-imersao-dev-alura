@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titulo": "Vidas Secas",
+    "autor": "Graciliano Ramos",
+    "ano_publicacao": "1938",
+    "sinopse": "A narrativa épica da luta de uma família de retirantes nordestinos (Fabiano, Sinhá Vitória, o Menino mais velho, o Menino mais novo e a cachorra Baleia) contra a seca, a miséria e a exclusão social.",
+    "genero": ["Romance", "Regionalista", "Modernismo"],
+    "personagem_principal": "Fabiano",
+    "link": "https://iedamagri.wordpress.com/wp-content/uploads/2020/02/vidas-secas-graciliano-ramos.pdf"
+  },
+  {
+    "id": 2,
+    "titulo": "O Cortiço",
+    "autor": "Aluísio Azevedo",
+    "ano_publicacao": "1890",
+    "sinopse": "Um romance que aborda a promiscuidade, a miséria e a decadência social em um cortiço carioca, representando a influência do meio no indivíduo sob a ótica do Naturalismo.",
+    "genero": ["Romance", "Naturalismo", "Crítica Social"],
+    "personagem_principal": "João Romão",
+    "link": "https://www.curso-objetivo.br/vestibular/assets/download/obras-literarias/aluisio-de-azevedo/o-cortico.pdf"
+  },
+  {
+    "id": 3,
+    "titulo": "Os Sertões",
+    "autor": "Euclides da Cunha",
+    "ano_publicacao": "1902",
+    "sinopse": "Uma obra-prima da literatura brasileira que narra a Guerra de Canudos. É dividida em três partes: A Terra, O Homem e A Luta, sendo um estudo profundo da história, geografia e sociologia do Brasil.",
+    "genero": ["Não-Ficção", "História", "Ensaio Sociológico"],
+    "personagem_principal": "Antônio Conselheiro",
+    "link": "https://fundar.org.br/wp-content/uploads/2021/06/os-sertoes.pdf"
+  },
+  {
+    "id": 4,
+    "titulo": "A Odisseia",
+    "autor": "Homero",
+    "ano_publicacao": "Século VIII a.C. (estimado)",
+    "sinopse": "Poema épico que conta o retorno do herói grego Odisseu (Ulisses) à sua casa em Ítaca, após a Guerra de Troia, enfrentando deuses, monstros e tentações ao longo de dez anos de jornada.",
+    "genero": ["Poema Épico", "Mitologia", "Aventura"],
+    "personagem_principal": "Odisseu",
+    "link": "https://prioste2015.wordpress.com/wp-content/uploads/2015/03/homero-odisseia-trad.-carlos-alberto-nunes.pdf"
+  },
+  {
+    "id": 5,
+    "titulo": "Macunaíma",
+    "autor": "Mário de Andrade",
+    "ano_publicacao": "1928",
+    "sinopse": "O herói sem nenhum caráter: o romance conta a história do índio Macunaíma, nascido na Amazônia, que viaja para São Paulo e Rio de Janeiro, vivendo aventuras fantásticas e simbólicas que representam a identidade e a cultura brasileira.",
+    "genero": ["Romance", "Modernismo", "Ficção Fantástica"],
+    "personagem_principal": "Macunaíma",
+    "link": "https://www.castroweb.com.br/castrodigital/Arquivos2020/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf"
+  },
+  {
+    "id": 6,
+    "titulo": "Grande Sertão: Veredas",
+    "autor": "Guimarães Rosa",
+    "ano_publicacao": "1956",
+    "sinopse": "Um monólogo épico de Riobaldo, um ex-jagunço que narra sua vida, suas lutas e seu amor por Diadorim, enquanto reflete sobre o bem e o mal, o diabo e Deus, e o sentido da existência no sertão mineiro.",
+    "genero": ["Romance", "Modernismo", "Regionalista"],
+    "personagem_principal": "Riobaldo",
+    "link": "https://www.kufunda.net/publicdocs/Grande%20Sert%C3%A3o_%20Veredas%20-%20Jo%C3%A3o%20Guimar%C3%A3es%20Rosa.pdf"
+  },
+  {
+    "id": 7,
+    "titulo": "O Guarani",
+    "autor": "José de Alencar",
+    "ano_publicacao": "1857",
+    "sinopse": "Um romance indianista que narra a história de Cecília (Ceci), a filha de D. Antônio de Mariz, e o índio Pery, que a protege de todos os perigos em um cenário romântico e heroico no Brasil colonial.",
+    "genero": ["Romance", "Romantismo", "Indianista"],
+    "personagem_principal": "Pery",
+    "link": "https://literaturaufalarapiraca.wordpress.com/wp-content/uploads/2018/01/hq-o-guarani-josc3a9-de-alencar.pdf"
+  },
+  {
+    "id": 8,
+    "titulo": "A Hora da Estrela",
+    "autor": "Clarice Lispector",
+    "ano_publicacao": "1977",
+    "sinopse": "A trágica e simples história de Macabéa, uma datilógrafa alagoana, pobre e ingênua, que vive no Rio de Janeiro. A narrativa é metaforicamente contada por um narrador, Rodrigo S.M., que questiona a própria função de contar a vida da personagem.",
+    "genero": ["Romance", "Pós-Modernismo", "Psicológico"],
+    "personagem_principal": "Macabéa",
+    "link": "https://ufpi.br/arquivos_download/arquivos/A_Hora_da_Estrela_-_Clarice_Lispector.pdf"
+  }
+]
